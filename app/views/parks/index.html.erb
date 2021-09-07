@@ -4,9 +4,9 @@
 
 <% @parks.each do |park| %>
   <div id="park-<%= park.id %>">
-    <p><%= park.name %></p>
-    <p><%= park.description %></p>
-    <p><%= park.directions %></p>
-    <p><%= park.hours %></p>
+    <p>Name: <%= park.name %></p>
+    <p>Description: <%= park.description %></p>
+    <p>Directions: <%= park.directions %></p>
+    <p>Hours: <%= park.hours %></p>
   </div>
 <% end %>
