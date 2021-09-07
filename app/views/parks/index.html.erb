@@ -1,0 +1,12 @@
+<h1>Parks</h1>
+
+<p>Total Parks: <%= @parks.length %></p>
+
+<% @parks.each do |park| %>
+  <div id="park-<%= park.id %>">
+    <p><%= park.name %></p>
+    <p><%= park.description %></p>
+    <p><%= park.directions %></p>
+    <p><%= park.hours %></p>
+  </div>
+<% end %>
