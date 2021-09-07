@@ -7,12 +7,6 @@ class Park
     @description = hash[:description]
     @directions = hash[:directionsInfo]
     @hours = hours_by_day(hash)
-
-    #
-    # .map do |day|
-    #   require "pry"; binding.pry
-    #   day[0].to_s.capitalize + ": " + day[1]
-    # end.join(", ")
   end
 
   def hours_by_day(hash)
