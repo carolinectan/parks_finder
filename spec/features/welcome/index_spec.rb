@@ -27,7 +27,7 @@ RSpec.describe 'welcome index page' do
       # - direction info
       expect(page).to have_content('Directions: There are many points of access along the Appalachian Trail, whether it is by car, train, bus or plane. For more detailed directions, please refer to the "Directions" section of our park webpage.')
       # - standard hours for operation
-      expect(page).to have_content('Hours: Sunday: All Day, Monday: All Day, Tuesday: All Day, Wednesday: All Day, Thursday: All Day, Friday: All Day, Saturday: All Day')
+      expect(page).to have_content('Hours: Sunday: All Day Monday: All Day Tuesday: All Day Wednesday: All Day Thursday: All Day Friday: All Day Saturday: All Day')
     end
   end
 end
