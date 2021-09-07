@@ -1,5 +1,5 @@
 class ParksController < ApplicationController
   def index
-    @parks = ParkService.get_parks(params[:state])
+    @parks = ParkFacade.parks_fetch(params[:state])
   end
 end
