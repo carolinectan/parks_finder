@@ -1,12 +1,15 @@
 <h1>Parks</h1>
 
-<p>Total Parks: <%= @parks.length %></p>
+<p>Total Parks: <%= @parks.length %></p><br>
 
 <% @parks.each do |park| %>
   <div id="park-<%= park.id %>">
-    <p>Name: <%= park.name %></p>
+    <h3><%= park.name %></h3>
     <p>Description: <%= park.description %></p>
     <p>Directions: <%= park.directions %></p>
-    <p>Hours: <%= park.hours %></p>
+    <p>Hours:<br><% park.hours.each do |day| %>
+      <%= day %><br>
+    <% end %></p>
   </div>
+  <br>
 <% end %>

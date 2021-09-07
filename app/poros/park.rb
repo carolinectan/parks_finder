@@ -10,12 +10,12 @@ class Park
   end
 
   def hours_by_day(hash)
-    "Sunday: #{hash[:operatingHours][0][:standardHours][:sunday]}, " +
-    "Monday: #{hash[:operatingHours][0][:standardHours][:monday]}, " +
-    "Tuesday: #{hash[:operatingHours][0][:standardHours][:tuesday]}, " +
-    "Wednesday: #{hash[:operatingHours][0][:standardHours][:wednesday]}, " +
-    "Thursday: #{hash[:operatingHours][0][:standardHours][:thursday]}, " +
-    "Friday: #{hash[:operatingHours][0][:standardHours][:friday]}, " +
-    "Saturday: #{hash[:operatingHours][0][:standardHours][:saturday]}"
+    ["Sunday: #{hash[:operatingHours][0][:standardHours][:sunday]}",
+    "Monday: #{hash[:operatingHours][0][:standardHours][:monday]}",
+    "Tuesday: #{hash[:operatingHours][0][:standardHours][:tuesday]}",
+    "Wednesday: #{hash[:operatingHours][0][:standardHours][:wednesday]}",
+    "Thursday: #{hash[:operatingHours][0][:standardHours][:thursday]}",
+    "Friday: #{hash[:operatingHours][0][:standardHours][:friday]}",
+    "Saturday: #{hash[:operatingHours][0][:standardHours][:saturday]}"]
   end
 end
